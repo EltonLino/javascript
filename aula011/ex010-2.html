@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificador de nacionalidade</title>
+    <style>
+        body{
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Identificador de nacionalidade</h1>
+    <p>Digite sua nacionalidade: <input type="text" name="txtnacionalidade" id="txtnacionalidade"></p>
+    <input type="button" value="Verificar" onclick="verificarNacionalidade()">
+    <div id="res"></div>
+    <script>
+        function verificarNacionalidade() {
+            var txtnacionalidade = document.getElementById
+            ('txtnacionalidade')
+            var res = document.querySelector('div#res');
+            res.innerHTML = `Você nasceu no <strong>${txtnacionalidade.value}</strong>.`
+            if(txtnacionalidade.value == 'Brasil'){
+                res.innerHTML += `<p>Você é <strong>BRASILEIRO</strong>.</p>`;
+        }else {
+                res.innerHTML += `<p>Você é <strong>EXTRANGEIRO</strong>.</p>`;
+            }
+            res.innerHTML += `<p>Obrigado por participar!</p>`;
+        }
+        </script>
+</body>
+</html>
