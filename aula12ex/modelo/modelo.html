@@ -6,20 +6,21 @@
     <title>Hora do dia</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="carregar()">
     <header>
         <h1>Hora do Dia</h1>
     </header>
     <section>
         <div>
-            <p id="hora"></p>
+            <p id="msg">Testando...</p>
         </div>
-        <div class="imagem">
-
+        <div id="imagem">
+            <img id="foto" src="img/fotomanha.png" alt="Imagem do dia">
         </div>
     </section>
     <footer>
-        Criado por Elton Lino
+        <p>&copy; Criado por Elton Lino</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
